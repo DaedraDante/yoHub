@@ -17,17 +17,39 @@ btn1ContentSection1.addEventListener("click",() => {
         contentSection1.style.display = "none"
 
 })
+
+
 section1AddTaskBtn.addEventListener("click",() => {
 
-  activitiesTable.innerHTML += `
-  <button>alert btn</button>
-  <input class="alligned-table-inner">
-  <input class="alligned-table-inner">
-  <select class="alligned-table-inner">
-  <option>1</option>
-  <option>2</option>
-  <option>3</option>
-  <option>4</option>
-  <option>5</option></select>
-  `
+  //Create input1
+  const newTableRowInput1 = document.createElement("input");
+  //Create input2
+  const newTableRowInput2 = document.createElement("input");
+  //Create section/options
+  const newTableRowSelect = document.createElement("select");
+  const newTableRowOption1 = document.createElement("option");
+  const newTableRowOption2 = document.createElement("option");
+  const newTableRowOption3 = document.createElement("option");
+
+  //Set properties for input1
+  newTableRowInput1.className = "alligned-table-inner";
+  //Set properties for input2
+  newTableRowInput2.className = "alligned-table-inner";
+  //Set properties for select/options
+  newTableRowSelect.className = "alligned-table-inner";
+  newTableRowOption1.value = "1";
+  newTableRowOption1.text = "1";
+  newTableRowOption2.value = "2";
+  newTableRowOption2.text = "2";
+  newTableRowOption3.value = "3";
+  newTableRowOption3.text = "3";
+  //Add options to select element using the .add method
+  newTableRowSelect.add(newTableRowOption1);
+  newTableRowSelect.add(newTableRowOption2);
+  newTableRowSelect.add(newTableRowOption3);
+
+  //Append input1 to activitiesTable
+  activitiesTable.appendChild(newTableRowInput1);
+  activitiesTable.appendChild(newTableRowInput2);
+  activitiesTable.appendChild(newTableRowSelect);
 })

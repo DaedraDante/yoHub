@@ -48,10 +48,10 @@ th {
 }
 .alligned-table {
     display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 20px;
     list-style: none;
-    margin-left: -130px;
+    margin-left: 230px;
 
 }
 .alligned-table-inner {
