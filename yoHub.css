@@ -1,59 +1,55 @@
 body {
-    background: rgb(92, 145, 155);
+    position: relative;
+    background-color: rgb(129, 209, 233);
+    margin: 0; /* Ensure no body margin affects positioning */
+    overflow: hidden; /* Optional: prevent scrolling if needed */
 }
-.section-select {
-    width:110em;
-    height:60em;
-    margin: auto;
-    margin-top: 5em;
-    border: 5px black solid;
-    background-color: rgb(159, 228, 205);
-}
-#section-list {
-    display: flex;
-    justify-content: center;
-    margin-top: 20em;
-    justify-content: space-evenly;
-}
-#section-list button {
-    width:15em;
-    height: 5em;
-}
-.section1-title {
-    display: flex;
-    justify-content: center;
-    font-size: 50px
-}
-#section1-content {
-    position: absolute;
-    width:110em;
-    height:60em;
-    margin: auto;
-    margin-top: -20em;
-    border: 5px black solid;
-    background-color: rgb(128, 49, 180);
-}
-#activities-table-header {
-    margin: auto;
-    margin-top: 5em;
-    background-color: rgb(151, 78, 219);
-    width: 80em;
-    height: 40em;
-}
-th {
-    padding-left: 280px;
-    padding-top: 30px;
-    padding-bottom: 15px;
-    justify-content: left;
-}
-.alligned-table {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 20px;
-    list-style: none;
-    margin-left: 230px;
 
+.wrapper {
+    position: absolute;
+    background-color: rgb(128, 247, 182);
+    width: 100em;
+    height: 52em;
+    border: 5px solid black;
+    margin: auto;
+    margin-top: 2em;
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for perfect horizontal centering */
 }
-.alligned-table-inner {
-  max-width: 100px;
+
+.sct1 {
+    background-color: rgb(216, 113, 113);
+    position: absolute;
+    width: 100em;
+    height: 52em;
+    border: 5px solid black;
+    margin: auto;
+    margin-top: 2em;
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for perfect horizontal centering */
+    display: none;
+}
+.sct2 {
+    background-color: blue;
+    position: absolute;
+    width: 100em;
+    height: 52em;
+    border: 5px solid black;
+    margin: auto;
+    margin-top: 2em;
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for perfect horizontal centering */
+    display: none;
+}
+.task-table {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 16em;
+}
+.task-table-child {
+    width: 10em;
+}
+.above-table {
+    margin: 0px;
+    border-spacing: 18em 0;
 }

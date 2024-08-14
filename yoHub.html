@@ -5,35 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="yoHub.css">
-    <script src="yoHub.js" async></script>
 </head>
 <body>
-    <div class="section-select">
-        <div id="section-list">
-            <button id="btn-open-section1">open To do List</button>
-            <!-- SECTION 1 : TODO LIST -->
-                    <div id="section1-content">
-                        <h1 class="section1-title">To Do List</h1>
-                        <button id="section1-content-button1">close To do List</button>
-                        <button id="section1-addTaskBtn">Add TASK</button>
-                        <!-- MAIN TABLE -->
-                            <div id="activities-table-header">
-                                <table id="toDoTable">
-                                    <tr>
-                                        <th>Title</th>
-                                        <th>Time taken</th>
-                                        <th>Importance</th>
-                                    </tr>
-                                </table>
-                                <div id="activities-table" class="alligned-table">
-                                </div>
-                            </div>
-                    </div>
-            <button id="section2-button">COMING SOON</button>
-            <button id="section2">COMING SOON</button>
-            <button id="section2">COMING SOON</button>
-            <button id="section2">COMING SOON</button>
+    <div class ="wrapper" id="sct-select-screen">
+        <button id="sct1-Open">open To Do List</button>
+        <button id="sct2-Open">hello</button>
+        <button>hello</button>
+        <button>hello</button>
+        <button>hello</button>
+    </div>
+    <!--section 1 : To Do List -->
+    <div class="sct sct1" id="sct1">
+        <button id="sct1-Close">close To Do List</button>
+        <button id="sct1-AddTaskBtn">Add a Task</button>
+        <h1 style="text-align: center;">To Do List</h1>
+        <table class="above-table">
+            <tr>
+                <th>title</th>
+                <th>time taken</th>
+                <th>importance</th>
+            </tr>
+        </table>
+        <div class="task-table" id="task-table">
+          
         </div>
     </div>
+    <!--section 1 : To Do List -->
+    <div class="sct sct2" id="sct2"></div>
+    <script src="yoHub.js"></script>
 </body>
 </html>
