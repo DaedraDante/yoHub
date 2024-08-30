@@ -1,7 +1,9 @@
 body {
     position: relative;
-    background-color: rgb(129, 209, 233);
-    margin: 0; /* Ensure no body margin affects positioning */
+    background: #abbaab;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #abbaab,#ffffff,#abbaab(0, 0%, 100%));  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #abbaab, #ffffff,#abbaab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     overflow: hidden; /* Optional: prevent scrolling if needed */
 }
 
