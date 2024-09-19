@@ -29,8 +29,10 @@ background: linear-gradient(to right, #abbaab, #ffffff,#abbaab); /* W3C, IE 10+/
     margin-top: 2em;
     left: 50%; /* Center horizontally */
     transform: translateX(-50%); /* Adjust for perfect horizontal centering */
+    grid-template-columns: 1fr 1fr 1fr;
     display: none;
 }
+
 .sct2 {
     background-color: blue;
     position: absolute;
@@ -54,4 +56,11 @@ background: linear-gradient(to right, #abbaab, #ffffff,#abbaab); /* W3C, IE 10+/
 .above-table {
     margin: 0px;
     border-spacing: 18em 0;
+}
+.sct1ListGrid {
+    width:80%;
+    height:70%;
+    margin: auto;
+    margin-top: 4em;
+    background-color: rgb(44, 191, 228);
 }

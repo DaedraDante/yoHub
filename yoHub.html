@@ -10,8 +10,8 @@
     <div class ="wrapper" id="sct-select-screen">
         <button id="sct1-Open">open To Do List</button>
         <button id="sct2-Open">open Calorie Tracker</button>
-        <button>hello</button>
-        <button>hello</button>
+        <button>Open Money Management</button>
+        <button>Open Journal</button>
         <button>hello</button>
     </div>
 
@@ -19,22 +19,20 @@
     <!--section 1 : To Do List -->
     <div class="sct sct1" id="sct1">
         <button id="sct1-Close">close To Do List</button>
+        <button id="sct1-AddTaskList">Add a To Do List</button>
+        <div id="sct1ListGrid" class="sct1ListGrid">
+
+        </div>
+    </div>
+    <div class="sct sct1" id="sct1TaskList">
+        <button id="sct1-CloseTaskTableBtn">Close task table</button>
         <button id="sct1-AddTaskBtn">Add a Task</button>
         <button id="sct1-SaveToLocalStorageBtn">Save to Local Storage</button>
-        <button id="sct1-LoadFromLocalStorageBtn">Load from Local Storage</button>
-        <h1 style="text-align: center;">To Do List</h1>
-        <table class="above-table">
-            <tr>
-                <th>title</th>
-                <th>time taken</th>
-                <th>importance</th>
-            </tr>
-        </table>
         <div class="task-table" id="task-table">
           
         </div>
     </div>
-    <!--section 1 : To Do List -->
+    <!--section 2 : Work In Progress -->
     <div class="sct sct2" id="sct2">
         <button id="sct2-Close">close Calorie Tracker</button>
         <h1 style="text-align: center;">Calorie Tracker</h1>
@@ -43,3 +41,4 @@
     <script src="yoHub.js"></script>
 </body>
 </html>
+
