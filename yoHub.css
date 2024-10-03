@@ -1,24 +1,30 @@
 body {
     position: relative;
-    background: #abbaab;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #abbaab,#ffffff,#abbaab(0, 0%, 100%));  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #abbaab, #ffffff,#abbaab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-    overflow: hidden; /* Optional: prevent scrolling if needed */
+    background-color: rgb(16, 14, 19);
 }
 
 .wrapper {
     position: absolute;
-    background-color: rgb(128, 247, 182);
+    background: #abbaab;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #402E7A,#4C3BCF,#402E7A(0, 0%, 100%));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #402E7A, #4C3BCF,#402E7A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     width: 100em;
     height: 52em;
     border: 5px solid black;
+    border-radius: 15px 15px;
+    box-shadow: 5px 5px 5px #4b38d8;
     margin: auto;
     margin-top: 2em;
     left: 50%; /* Center horizontally */
     transform: translateX(-50%); /* Adjust for perfect horizontal centering */
 }
-
+.mainTitle {
+    color: rgb(203, 212, 219);
+    font-size: 3rem;
+    position: relative;
+    top: 60px;
+    margin-bottom: 12rem;
+}
 .sct1 {
     background-color: rgb(216, 113, 113);
     position: absolute;
@@ -33,34 +39,143 @@ background: linear-gradient(to right, #abbaab, #ffffff,#abbaab); /* W3C, IE 10+/
     display: none;
 }
 
+.selectAppBtn {
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 15px 30px;
+    width: 200px;
+    border: 2px solid #2c2c2c;
+    background-color: #1a1a1a;
+    color: rgb(209, 214, 218);
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: all 0.4s ease;
+    outline: none;
+    position: relative;
+    overflow: hidden;
+    font-weight: bold;
+  }
+  .selectAppBtn::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(
+      circle,
+      rgba(255, 255, 255, 0.25) 0%,
+      rgba(255, 255, 255, 0) 70%
+    );
+    transform: scale(0);
+    transition: transform 0.5s ease;
+  }
+  .selectAppBtn:hover::after {
+    transform: scale(4);
+  }
+  .selectAppBtn:hover {
+    border-color: #666666;
+    background: #292929;
+  }
+
 .sct2 {
-    background-color: blue;
+    background: #abbaab;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #402E7A,#4C3BCF,#402E7A(0, 0%, 100%));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #402E7A, #4C3BCF,#402E7A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     position: absolute;
     width: 100em;
     height: 52em;
     border: 5px solid black;
     margin: auto;
     margin-top: 2em;
-    left: 50%; /* Center horizontally */
-    transform: translateX(-50%); /* Adjust for perfect horizontal centering */
+    left: 50%; 
+    transform: translateX(-50%); 
     display: none;
 }
-.task-table {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin-left: 16em;
-}
-.task-table-child {
-    width: 10em;
-}
-.above-table {
-    margin: 0px;
-    border-spacing: 18em 0;
-}
-.sct1ListGrid {
-    width:80%;
+.sct2PageListContainer { 
+  background-color: #7456d6;
+  border: 3px solid black;
+  box-shadow: 5px 5px 5px black;
+  width:80%;
     height:70%;
     margin: auto;
     margin-top: 4em;
-    background-color: rgb(44, 191, 228);
 }
+.sct-select-screen-btn-container {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+.sct2-journal-page {
+  background: #abbaab;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #402E7A,#4C3BCF,#402E7A(0, 0%, 100%));  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #402E7A, #4C3BCF,#402E7A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    position: absolute;
+    width: 100em;
+    height: 52em;
+    border: 5px solid black;
+    margin: auto;
+    margin-top: 2em;
+    left: 50%; 
+    transform: translateX(-50%); 
+    display: none;
+}
+.sct2-journal-page-title {
+  color: rgb(203, 212, 219);
+  text-align: center;
+}
+.sct2JournalPageTextArea {
+  background-color: rgb(203, 212, 219);
+  width: 60rem;
+  height:40rem;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  margin: auto auto;
+  margin-top: 30px;
+  font-size: 1.5rem;
+  resize: none;
+  box-shadow: 6px 6px 8px rgb(13, 6, 17);
+  border-radius: 5px 5px;
+  border: none;
+}
+/* From Uiverse.io by bandirevanth */ 
+.custom-btn {
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255,255,255,.5),
+    7px 7px 20px 0px rgba(0,0,0,.1),
+    4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+ }
+ 
+ .btn-1 {
+  color: rgb(203, 212, 219);
+  background: rgb(49, 5, 121);
+  background: linear-gradient(0deg, rgb(13, 9, 20) 0%, rgb(51, 17, 90) 100%);
+  border: none;
+ }
+ 
+ .btn-1:before {
+  height: 0%;
+  width: 2px;
+ }
+ 
+ .btn-1:hover {
+  box-shadow: 4px 4px 6px 0 rgba(255,255,255,.5),
+               -4px -4px 6px 0 rgba(116, 125, 136, .5), 
+     inset -4px -4px 6px 0 rgba(255,255,255,.2),
+     inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
+ }
+ 
