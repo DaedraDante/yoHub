@@ -55,6 +55,7 @@ body {
     position: relative;
     overflow: hidden;
     font-weight: bold;
+    box-shadow: 5px 5px 5px rgb(91, 26, 196);
   }
   .selectAppBtn::after {
     content: "";
@@ -95,7 +96,7 @@ body {
 }
 .sct2PageListContainer { 
   background-color: #7456d6;
-  border: 3px solid black;
+
   box-shadow: 5px 5px 5px black;
   width:80%;
     height:70%;
@@ -178,4 +179,46 @@ body {
      inset -4px -4px 6px 0 rgba(255,255,255,.2),
      inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
  }
- 
+ .sct3 {
+      background: #abbaab;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #402E7A,#4C3BCF,#402E7A(0, 0%, 100%));  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #402E7A, #4C3BCF,#402E7A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      position: absolute;
+      width: 100em;
+      height: 52em;
+      border: 5px solid black;
+      margin: auto;
+      margin-top: 2em;
+      left: 50%; 
+      transform: translateX(-50%); 
+      display: none;
+ }
+ .timer-container {
+      background-color: #7456d6;
+      width:35em;
+      height:20em;
+      justify-content: center;
+      margin: auto;
+      margin-top: 8em;
+      box-shadow: 5px 5px 5px black;
+ }
+ .timer-font-wrapper {
+      font-size: 4em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+ }
+.hours-minutes-seconds-text {
+  position: relative;
+  display: grid;
+  grid-template-columns: 8em 8em 8em;
+  margin: 0 auto;
+  left: 40.5em;
+  top: -12em;
+}
+.sct3-timer-buttons-div {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 2px
+;
+}

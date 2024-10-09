@@ -27,6 +27,19 @@ const sct2JournalPageTextArea = document.createElement("textarea");
 const sct2DeleteJournalPage = document.getElementById("sct2-delete-journal-page");
 const sct2BackToPageListBtn = document.getElementById("sct2-back-to-page-list-btn");
 
+//SECTION 3 sct
+const sct3 = document.getElementById("sct3");
+const sct3Open = document.getElementById("sct3-Open");
+const sct3Close = document.getElementById("sct3-Close");
+const sct3StartTimerBtn = document.getElementById("sct3-start-timer-btn");
+const sct3StopTimerBtn = document.getElementById("sct3-stop-timer-btn");
+let intervalVariable
+let sct3Hours = 0;
+let sct3HoursText = document.getElementById("sct3HoursText");
+let sct3Minutes = 0;
+let sct3MinutesText = document.getElementById("sct3MinutesText");
+let sct3Seconds = 0;
+let sct3SecondsText = document.getElementById("sct3SecondsText");
 // Load journal pages from localStorage when the app starts
 window.addEventListener("load", () => {
     const savedPages = JSON.parse(localStorage.getItem("journalPages")) || [];
@@ -123,4 +136,36 @@ sct2BackToPageListBtn.addEventListener("click", () => {
     // Return to the list of pages
     sct2JournalPage.style.display = "none";
     sct2.style.display = "block";
+});
+
+//Open and close sct3
+sct3Open.addEventListener("click",() => {
+    sctSelectScreen.style.display = "none";
+    sct3.style.display = "block";
+});
+sct3Close.addEventListener("click",() => {
+    sct3.style.display = "none";
+    sctSelectScreen.style.display = "block"
+})
+//Start timer 
+sct3StartTimerBtn.addEventListener("click",() => {
+        const IncreaseSecondsMinutesHours = () => {
+        sct3Seconds++
+        if(sct3Seconds > 59) {
+            sct3Seconds = 0; 
+            sct3Minutes++    
+        }else if(sct3Minutes > 59) {
+            sct3Minutes = 0;
+            sct3Hours++
+        }
+        sct3SecondsText.textContent = sct3Seconds;
+        sct3MinutesText.textContent = sct3Minutes;
+        sct3HoursText.textContent = sct3Hours;
+    }; 
+      intervalVariable = setInterval(IncreaseSecondsMinutesHours,1000);
+});
+//Stop timer
+sct3StopTimerBtn.addEventListener("click",() => {
+    timerShouldRun = false;
+    clearInterval(intervalVariable);
 });
