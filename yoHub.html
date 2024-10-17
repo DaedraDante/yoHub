@@ -13,25 +13,59 @@
             <button id="sct1-Open" class="selectAppBtn"> open To Do List </button>
             <button id="sct2-Open" class="selectAppBtn"> open Journal </button>
             <button id="sct3-Open" class="selectAppBtn"> open Stopwatch </button>
-            <button class="selectAppBtn">Open Calorie Tracker</button>
+            <button id="sct4-Open" class="selectAppBtn">Rock Paper Scissors!</button>
             <button class="selectAppBtn">wip</button>
         </div>  
     </div>
 
 
-    <!--section 1 : To Do List:Work In Progress -->
+<!--section 1 : To Do List:Work In Progress -->
     <div class="sct sct1" id="sct1">
         <h1 style="text-align: center;">To Do List</h1>
-        <button id="sct1-Close">close To Do List</button>
-        <button id="sct1-AddTaskList">Add a To Do List</button>
-        <div id="sct1ListGrid" class="sct1ListGrid">
+        <button id="sct1-Close" class="selectAppBtn">close To Do List</button>
+        <button id="sct1-add-to-do-list-btn" class="selectAppBtn">Add a To Do List</button>
+        <div id="sct1-to-do-lists-container" class="sct1-to-do-lists-container">
         </div>
     </div>
-    <!--section 2 : Journal -->
+    <div id="sct1-to-do-list" class="sct1-to-do-list">
+        <h1 id="sct1-to-do-list-title" class="sct1-to-do-list-title">title here</h1>
+        <button id="sct1-back-to-to-do-list-page-btn" class="selectAppBtn">Go back</button>
+        <button id="sct1-add-task-btn" class="selectAppBtn">Add a task</button>
+        <div id="sct1-div-for-table" class="sct1-div-for-table">
+            <table id="sct1-task-table" class="sct1-task-table">
+                    <tr>
+                        <th>TaskName</th>
+                        <th>Time Taken</th>
+                        <th>Status</th>
+                        <th>Remove</th>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">Title</td>
+                        <td>
+                            <select name="" id="">
+                                <option value="">30 Minutes</option>
+                                <option value="">60 Minutes</option>
+                                <option value="">90 Minutes</option>
+                                <option value="">2 Hours+</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select name="" id="">
+                                <option value="">To do</option>
+                                <option value="">In progress</option>
+                                <option value="">Complete</option>
+                            </select>
+                        </td>
+                        <td><button>remove</button></td>
+                    </tr>
+            </table>
+        </div>
+    </div>
+<!--section 2 : Journal -->
     <div class="sct sct2" id="sct2">
         <h1 style="text-align: center; color: rgb(203, 212, 219);">Journal</h1>
-        <button id="sct2-Close" class="selectAppBtn">Close journal</button>
-        <button id="sct2-AddJournalPageBtn" class="selectAppBtn">Add a page</button>
+        <button id="sct2-Close" class="selectAppBtn">Close Journal</button>
+        <button id="sct2-AddJournalPageBtn" class="selectAppBtn">Add a Page</button>
         <div id="sct2PageListContainer" class="sct2PageListContainer">
         </div>
     </div>
@@ -40,24 +74,45 @@
         <button id="sct2-back-to-page-list-btn" class="selectAppBtn">Go back</button>
         <button id="sct2-delete-journal-page" class="selectAppBtn">Delete page</button>
     </div>
-    <!--section 3 : Timer:Work In Progress -->
+<!--section 3 : Timer -->
     <div id="sct3" class="sct sct3">
         <h1 style="text-align: center; color: rgb(203, 212, 219);">Timer</h1>
         <button id="sct3-Close" class="selectAppBtn">Close Timer</button>
         <div class="timer-container">
             <div class="timer-font-wrapper">
-                <p id="sct3HoursText" class="timer-font">00</p>
+                <p id="sct3HoursText" class="timer-font">00 </p>
                 <p>---</p>
-                <p id="sct3MinutesText" class="timer-font"> 00</p>
+                <p id="sct3MinutesText" class="timer-font"> 00 </p>
                 <p>---</p>
-                <p id="sct3SecondsText" class="timer-font"> 00</p>
+                <p id="sct3SecondsText" class="timer-font"> 00 </p>
             </div> 
             <div class="sct3-timer-buttons-div">
                 <button id="sct3-start-timer-btn" class="selectAppBtn" style="margin-left: 4em;">Start Timer</button>
-                <button id="sct3-stop-timer-btn" class="selectAppBtn">Close Timer</button>
+                <button id="sct3-stop-timer-btn" class="selectAppBtn">Stop Timer</button>
             </div>
         </div>
         <div class="hours-minutes-seconds-text"><p>Hours</p><p>Minutes</p><p>Seconds</p></div>
+    </div>
+ <!--section 3 : Rock Paper Scissors:Work In Progress -->
+    <div class="sct sct4" id="sct4">
+        <h1 style="text-align: center; color: rgb(203, 212, 219);">RPS Game</h1>
+        <button id="sct4-Close" class="selectAppBtn">Close RPS Game</button>
+        <div class="game-container">
+            <div class="sct4-text-div">
+            <h1 id="sct4-computerChose-text" style="text-align: center;">CPU chose:</h1>
+            <h1 id="sct4-playerChose-text" style="text-align: center;">You chose:</h1>
+            <h1 id="sct4-WinOrLose-text" style="text-align: center;">Select one of the 3</h1>
+            </div>
+            <div class="sct4-selection-buttons-div">
+                <button id="sct4-rock-btn" class="selectAppBtn" style="margin-left: 1.7em;">✊</button>
+                <button id="sct4-paper-btn" class="selectAppBtn">✋</button>
+                <button id="sct4-scissors-btn" class="selectAppBtn">✌️</button>
+            </div>
+            <img src="https://cdn-icons-png.flaticon.com/128/2348/2348789.png" alt="playerImg" class="sct4-playerImg">
+            <img src="https://cdn-icons-png.flaticon.com/128/10087/10087830.png" alt="cpuImg" class="sct4-cpuImg">
+            <h1 id="sct4-player-score-text" class="sct4-player-score-text"></h1>
+            <h1 id="sct4-cpu-score-text" class="sct4-cpu-score-text"></h1>
+        </div>
     </div>
     <script src="yoHub.js"></script>
 </body>

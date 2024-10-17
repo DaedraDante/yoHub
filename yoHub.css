@@ -25,19 +25,6 @@ body {
     top: 60px;
     margin-bottom: 12rem;
 }
-.sct1 {
-    background-color: rgb(216, 113, 113);
-    position: absolute;
-    width: 100em;
-    height: 52em;
-    border: 5px solid black;
-    margin: auto;
-    margin-top: 2em;
-    left: 50%; /* Center horizontally */
-    transform: translateX(-50%); /* Adjust for perfect horizontal centering */
-    grid-template-columns: 1fr 1fr 1fr;
-    display: none;
-}
 
 .selectAppBtn {
     margin-left: 15px;
@@ -80,68 +67,6 @@ body {
     background: #292929;
   }
 
-.sct2 {
-    background: #abbaab;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #402E7A,#4C3BCF,#402E7A(0, 0%, 100%));  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #402E7A, #4C3BCF,#402E7A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    position: absolute;
-    width: 100em;
-    height: 52em;
-    border: 5px solid black;
-    margin: auto;
-    margin-top: 2em;
-    left: 50%; 
-    transform: translateX(-50%); 
-    display: none;
-}
-.sct2PageListContainer { 
-  background-color: #7456d6;
-
-  box-shadow: 5px 5px 5px black;
-  width:80%;
-    height:70%;
-    margin: auto;
-    margin-top: 4em;
-}
-.sct-select-screen-btn-container {
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-}
-.sct2-journal-page {
-  background: #abbaab;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #402E7A,#4C3BCF,#402E7A(0, 0%, 100%));  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #402E7A, #4C3BCF,#402E7A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    position: absolute;
-    width: 100em;
-    height: 52em;
-    border: 5px solid black;
-    margin: auto;
-    margin-top: 2em;
-    left: 50%; 
-    transform: translateX(-50%); 
-    display: none;
-}
-.sct2-journal-page-title {
-  color: rgb(203, 212, 219);
-  text-align: center;
-}
-.sct2JournalPageTextArea {
-  background-color: rgb(203, 212, 219);
-  width: 60rem;
-  height:40rem;
-  display: flex;
-  justify-content: center;
-  justify-items: center;
-  margin: auto auto;
-  margin-top: 30px;
-  font-size: 1.5rem;
-  resize: none;
-  box-shadow: 6px 6px 8px rgb(13, 6, 17);
-  border-radius: 5px 5px;
-  border: none;
-}
-/* From Uiverse.io by bandirevanth */ 
 .custom-btn {
   width: 130px;
   height: 40px;
@@ -160,25 +85,143 @@ body {
     4px 4px 5px 0px rgba(0,0,0,.1);
   outline: none;
  }
- 
- .btn-1 {
-  color: rgb(203, 212, 219);
-  background: rgb(49, 5, 121);
-  background: linear-gradient(0deg, rgb(13, 9, 20) 0%, rgb(51, 17, 90) 100%);
-  border: none;
- }
- 
- .btn-1:before {
-  height: 0%;
-  width: 2px;
- }
- 
- .btn-1:hover {
-  box-shadow: 4px 4px 6px 0 rgba(255,255,255,.5),
-               -4px -4px 6px 0 rgba(116, 125, 136, .5), 
-     inset -4px -4px 6px 0 rgba(255,255,255,.2),
-     inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
- }
+  .btn-1 {
+    color: rgb(203, 212, 219);
+    background: rgb(49, 5, 121);
+    background: linear-gradient(0deg, rgb(13, 9, 20) 0%, rgb(51, 17, 90) 100%);
+    border: none;
+  }
+  .btn-1:before {
+    height: 0%;
+    width: 2px;
+  }
+  .btn-1:hover {
+    box-shadow: 4px 4px 6px 0 rgba(255,255,255,.5),
+                -4px -4px 6px 0 rgba(116, 125, 136, .5), 
+      inset -4px -4px 6px 0 rgba(255,255,255,.2),
+      inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
+  }
+
+
+.sct1 {
+  background: #abbaab;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #402E7A,#4C3BCF,#402E7A(0, 0%, 100%));  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #402E7A, #4C3BCF,#402E7A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  position: absolute;
+  width: 100em;
+  height: 52em;
+  border: 5px solid black;
+  margin: auto;
+  margin-top: 2em;
+  left: 50%; 
+  transform: translateX(-50%); 
+  display: none;
+}
+  .sct1-to-do-lists-container {
+    background-color: #7456d6;
+    box-shadow: 5px 5px 5px black;
+    width:80%;
+      height:70%;
+      margin: auto;
+      margin-top: 4em;
+  }
+  .sct1-to-do-list {
+    background: #abbaab;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #402E7A,#4C3BCF,#402E7A(0, 0%, 100%));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #402E7A, #4C3BCF,#402E7A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      position: absolute;
+      width: 100em;
+      height: 52em;
+      border: 5px solid black;
+      margin: auto;
+      margin-top: 2em;
+      left: 50%; 
+      transform: translateX(-50%); 
+      display: none;
+  }
+  .sct1-to-do-list-title {
+    display: flex;
+    justify-content: center;
+  }
+  .sct1-div-for-table {
+    position: relative;
+    top: -6em;
+    background-color:rgb(201, 214, 224) ;
+    width: 65em;
+    height: 34em;
+    box-shadow: 5px 5px 5px black;
+    border: 5px solid black;
+    margin: 0 auto;
+    margin-top: 12em;
+  }
+  .sct1-task-table {
+    margin: 0 auto;
+    margin-top: 1.5em;
+  }
+
+.sct2 {
+    background: #abbaab;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #402E7A,#4C3BCF,#402E7A(0, 0%, 100%));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #402E7A, #4C3BCF,#402E7A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    position: absolute;
+    width: 100em;
+    height: 52em;
+    border: 5px solid black;
+    margin: auto;
+    margin-top: 2em;
+    left: 50%; 
+    transform: translateX(-50%); 
+    display: none;
+}
+  .sct2PageListContainer { 
+    background-color: #7456d6;
+    box-shadow: 5px 5px 5px black;
+    width:80%;
+      height:70%;
+      margin: auto;
+      margin-top: 4em;
+  }
+  .sct-select-screen-btn-container {
+      display: flex;
+      justify-content: center;
+      margin: 0 auto;
+  }
+  .sct2-journal-page {
+    background: #abbaab;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #402E7A,#4C3BCF,#402E7A(0, 0%, 100%));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #402E7A, #4C3BCF,#402E7A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      position: absolute;
+      width: 100em;
+      height: 52em;
+      border: 5px solid black;
+      margin: auto;
+      margin-top: 2em;
+      left: 50%; 
+      transform: translateX(-50%); 
+      display: none;
+  }
+  .sct2-journal-page-title {
+    color: rgb(203, 212, 219);
+    text-align: center;
+  }
+  .sct2JournalPageTextArea {
+    background-color: rgb(203, 212, 219);
+    width: 60rem;
+    height:40rem;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    margin: auto auto;
+    margin-top: 30px;
+    font-size: 1.5rem;
+    resize: none;
+    box-shadow: 6px 6px 8px rgb(13, 6, 17);
+    border-radius: 5px 5px;
+    border: none;
+  }
+
+
+
  .sct3 {
       background: #abbaab;  /* fallback for old browsers */
       background: -webkit-linear-gradient(to right, #402E7A,#4C3BCF,#402E7A(0, 0%, 100%));  /* Chrome 10-25, Safari 5.1-6 */
@@ -193,32 +236,93 @@ body {
       transform: translateX(-50%); 
       display: none;
  }
- .timer-container {
-      background-color: #7456d6;
-      width:35em;
-      height:20em;
-      justify-content: center;
-      margin: auto;
-      margin-top: 8em;
-      box-shadow: 5px 5px 5px black;
- }
- .timer-font-wrapper {
-      font-size: 4em;
-      display: flex;
-      align-items: center;
-      justify-content: center;
- }
-.hours-minutes-seconds-text {
-  position: relative;
+  .timer-container {
+        background-color: #7456d6;
+        width:35em;
+        height:20em;
+        margin: auto;
+        margin-top: 8em;
+        box-shadow: 5px 5px 5px black;
+  }
+  .timer-font-wrapper {
+        font-size: 4em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+  }
+  .hours-minutes-seconds-text {
+    position: relative;
+    display: grid;
+    grid-template-columns: 8em 8em 8em;
+    margin: 0 auto;
+    left: 40.5em;
+    top: -12em;
+  }
+  .sct3-timer-buttons-div {
   display: grid;
-  grid-template-columns: 8em 8em 8em;
-  margin: 0 auto;
-  left: 40.5em;
-  top: -12em;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px
+  ;
+  }
+  
+.sct4 {
+        background: #abbaab;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #402E7A,#4C3BCF,#402E7A(0, 0%, 100%));  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #402E7A, #4C3BCF,#402E7A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        position: absolute;
+        width: 100em;
+        height: 52em;
+        border: 5px solid black;
+        margin: auto;
+        margin-top: 2em;
+        left: 50%; 
+        transform: translateX(-50%); 
+        display: none;
 }
-.sct3-timer-buttons-div {
-display: grid;
-grid-template-columns: 1fr 1fr;
-gap: 2px
-;
-}
+  .game-container {
+    background-color: #7456d6;
+    width:45em;
+    height:25em;
+    margin: auto;
+    margin-top: 8em;
+    box-shadow: 5px 5px 5px black;
+  }
+  .game-container button {
+    max-height: 4em;
+  }
+  .sct4-selection-buttons-div{
+    display: flex;
+    position: relative;
+    top: 6em;
+  }
+  .sct4-playerImg {
+    position: relative;
+    right: -2em;
+    top: -13.5em;
+    height: 7em;
+    width: 7em;
+
+  }
+  .sct4-cpuImg {
+    position: relative;
+    top: -13.5em;
+    left: 29em;
+    height: 7em;
+    width: 7em;
+  }
+  .sct4-text-div {
+    position: relative;
+    top: 4em;
+  }
+  .sct4-player-score-text {
+    position: relative;
+    top: -9.5em;
+    left: 1em;
+    font-size: 1.5em;
+  }
+  .sct4-cpu-score-text {
+    position: relative;
+    top: -11.3em;
+    left: 23.6em;
+    font-size: 1.5em;
+  }
