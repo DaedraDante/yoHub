@@ -326,3 +326,77 @@ body {
     left: 23.6em;
     font-size: 1.5em;
   }
+
+.sct5 {
+  background: #abbaab;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #402E7A,#4C3BCF,#402E7A(0, 0%, 100%));  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #402E7A, #4C3BCF,#402E7A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  position: absolute;
+  width: 100em;
+  height: 52em;
+  border: 5px solid black;
+  margin: auto;
+  margin-top: 2em;
+  left: 50%; 
+  transform: translateX(-50%); 
+  display: none;
+}
+  .sct5-games-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: #7456d6;
+    width:85em;
+    height:38em;
+    margin: auto;
+    margin-top: 2em;
+    box-shadow: 5px 5px 5px black;
+    overflow: auto;
+  }
+  .sct5-game-card {
+    background-color: #5b39cc;
+    width:16em;
+    height:24em;
+    margin: auto;
+    margin-top: 2em;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 5px 5px;
+  }
+  #sct5-game-title {
+    text-align: center;
+    font-size: 2.4em;
+    margin:0;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+  }
+  #sct5-game-genres {
+    margin: 0;
+    text-align: center;
+    font-size: 2em;
+  }
+  #sct5-game-release-date {
+    margin: 0;
+    text-align: center;
+  }
+  .sct5-game-image {
+    margin-left: 1.6em;
+    width: 13em;
+    height: 16em;
+    box-shadow: 5px 5px 5px black;
+    border-radius:10px 10px;
+    border: 3px solid black;
+  }
+
+.sct6 {
+  background: #abbaab;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #402E7A,#4C3BCF,#402E7A(0, 0%, 100%));  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #402E7A, #4C3BCF,#402E7A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  position: absolute;
+  width: 100em;
+  height: 52em;
+  border: 5px solid black;
+  margin: auto;
+  margin-top: 2em;
+  left: 50%; 
+  transform: translateX(-50%); 
+  display: none;
+}

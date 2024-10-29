@@ -39,13 +39,14 @@ let sct3Minutes = 0;
 let sct3MinutesText = document.getElementById("sct3MinutesText");
 let sct3Seconds = 0;
 let sct3SecondsText = document.getElementById("sct3SecondsText");
-// Load journal pages from localStorage when the app starts
-window.addEventListener("load", () => {
-    const savedPages = JSON.parse(localStorage.getItem("journalPages")) || [];
-    savedPages.forEach(pageName => {
-        addJournalPageToList(pageName);
+    // Load journal pages from localStorage when the app starts
+    window.addEventListener("load", () => {
+        const savedPages = JSON.parse(localStorage.getItem("journalPages")) || [];
+        savedPages.forEach(pageName => {
+            addJournalPageToList(pageName);
+        });
     });
-});
+
 //SECTION 4 
 const sct4 = document.getElementById("sct4");
 const sct4Open = document.getElementById("sct4-Open");
@@ -62,6 +63,22 @@ let playerScore = 0
 let cpuScore = 0
 const sct4PlayerScoreText = document.getElementById("sct4-player-score-text");
 const sct4CpuScoreText = document.getElementById("sct4-cpu-score-text");
+
+//SECTION 5
+const sct5 = document.getElementById("sct5");
+const sct5Open = document.getElementById("sct5-Open");
+const sct5Close = document.getElementById("sct5-Close");
+const sct5SelectGenreFilter = document.getElementById("sct5-select-genre=filter");
+const sct5GameCards = document.getElementsByClassName("sct5-game-card")
+const sct5MOBACards = document.getElementsByClassName("sct5-MOBAGameCard");
+const sct5ShooterCards = document.getElementsByClassName("sct5-ShooterGameCard");
+const sct5SandboxCards = document.getElementsByClassName("sct5-SandboxGameCard");
+const sct5BattleRoyaleCards = document.getElementsByClassName("sct5-BattleRoyaleCard")
+
+//SECTION 6
+const sct6 = document.getElementById("sct6");
+const sct6Open = document.getElementById("sct6-Open");
+const sct6Close = document.getElementById("sct6-Close");
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Open and Close sct1
 sct1Open.addEventListener("click",() => {
@@ -368,3 +385,62 @@ const wonOrLost = () => {
     sct4PlayerScoreText.textContent = `Your Score: ${playerScore}`;
 };
 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//Open and Close sct5
+sct5Open.addEventListener("click",() => {
+    sctSelectScreen.style.display = "none";
+    sct5.style.display = "block";
+});
+sct5Close.addEventListener("click",() => {
+    sct5.style.display = "none";
+    sctSelectScreen.style.display = "block";
+});
+
+//Code to determine which option was chosen and execute a the function with
+//a corresponding parameter for the option chosen
+sct5SelectGenreFilter.addEventListener("change",() => {
+    const selectedValue = sct5SelectGenreFilter.value;
+    if(selectedValue === "Any-genre-option") {
+        for (let i = 0; i <sct5GameCards.length; i++) {
+            sct5GameCards[i].style.display = "block"
+        }
+    }else if(selectedValue === "Sandbox-option") {
+        for (let i = 0; i <sct5GameCards.length; i++) {
+            sct5GameCards[i].style.display = "none"
+        }
+        for (let i = 0; i < sct5SandboxCards.length; i++) {
+            sct5SandboxCards[i].style.display = "block"
+        }
+    }else if(selectedValue === "MOBA-option") {
+        for (let i = 0; i <sct5GameCards.length; i++) {
+            sct5GameCards[i].style.display = "none"
+        }
+        for (let i = 0; i < sct5MOBACards.length; i++) {
+            sct5MOBACards[i].style.display = "block"
+        }
+    }else if(selectedValue === "Shooter-option") {
+        for (let i = 0; i <sct5GameCards.length; i++) {
+            sct5GameCards[i].style.display = "none"
+        }
+        for (let i = 0; i < sct5ShooterCards.length; i++) {
+            sct5ShooterCards[i].style.display = "block"
+        }
+    }else if(selectedValue === "Battle-Royale-option") {
+        for (let i = 0; i <sct5GameCards.length; i++) {
+            sct5GameCards[i].style.display = "none"
+        }
+        for (let i = 0; i < sct5BattleRoyaleCards.length; i++) {
+            sct5BattleRoyaleCards[i].style.display = "block"
+        }
+    }
+})
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//Open and Close sct6
+sct6Open.addEventListener("click",() => {
+    sctSelectScreen.style.display = "none";
+    sct6.style.display = "block";
+})
+sct6Close.addEventListener("click",() => {
+    sct6.style.display = "none";
+    sctSelectScreen.style.display = "block";
+})

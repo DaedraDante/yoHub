@@ -13,8 +13,9 @@
             <button id="sct1-Open" class="selectAppBtn"> open To Do List </button>
             <button id="sct2-Open" class="selectAppBtn"> open Journal </button>
             <button id="sct3-Open" class="selectAppBtn"> open Stopwatch </button>
-            <button id="sct4-Open" class="selectAppBtn">Rock Paper Scissors!</button>
-            <button class="selectAppBtn">wip</button>
+            <button id="sct4-Open" class="selectAppBtn"> open Rock Paper Scissors! </button>
+            <button id="sct5-Open" class="selectAppBtn"> open Filter Games Project </button>
+            <button id="sct6-Open" class="selectAppBtn"> open Blackjack </button>
         </div>  
     </div>
 
@@ -93,7 +94,7 @@
         </div>
         <div class="hours-minutes-seconds-text"><p>Hours</p><p>Minutes</p><p>Seconds</p></div>
     </div>
- <!--section 3 : Rock Paper Scissors:Work In Progress -->
+ <!--section 4 : Rock Paper Scissors:Work In Progress -->
     <div class="sct sct4" id="sct4">
         <h1 style="text-align: center; color: rgb(203, 212, 219);">RPS Game</h1>
         <button id="sct4-Close" class="selectAppBtn">Close RPS Game</button>
@@ -113,6 +114,109 @@
             <h1 id="sct4-player-score-text" class="sct4-player-score-text"></h1>
             <h1 id="sct4-cpu-score-text" class="sct4-cpu-score-text"></h1>
         </div>
+    </div>
+ <!--section 5 : Filter Games Project:Work In Progress -->
+    <div class="sct sct5" id="sct5">
+        <h1 style="text-align: center; color: rgb(203, 212, 219);">Filter these games</h1>
+        <button id="sct5-Close" class="selectAppBtn">Close Filter Games Project</button>
+        <select name="" id="sct5-select-genre=filter">
+            <option value="Any-genre-option" id="sct5Any-genre-option">Any genre</option>
+            <option value="Sandbox-option" id="sct5Sandbox-option">Sandbox Games</option>
+            <option value="MOBA-option" id="sct5MOBA-option">MOBA Games</option>
+            <option value="Shooter-option" id="sct5FPS-option">Shooter Games</option>
+            <option value="Battle-Royale-option" id="sct5Battle-Royale-option">Battle Royale Games</option>
+        </select>
+        <div class="sct5-games-container">
+            <div class="sct5-game-card sct5-SandboxGameCard">
+                <p id="sct5-game-title">Minecraft</p>
+                <img src="https://m.media-amazon.com/images/M/MV5BNjQzMDlkNDctYmE3Yi00ZWFiLTlmOWYtMjI4MzQ4Y2JhZjY2XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="" class="sct5-game-image">
+                <p id="sct5-game-genres">Sandbox</p>
+                <p id="sct5-game-release-date">Release date: 2011</p>
+            </div>
+            <div class="sct5-game-card sct5-ShooterGameCard">
+                <p id="sct5-game-title">CS 2</p>
+                <img src="https://egamersworld.com/_next/image?url=https%3A%2F%2Fegamersworld.com%2Fuploads%2Fblog%2F1696414021417.jpg&w=1920&q=75" alt="" class="sct5-game-image">
+                <p id="sct5-game-genres">Shooter</p>
+                <p id="sct5-game-release-date">Release date: 2023</p>
+            </div>
+            <div class="sct5-game-card sct5-SandboxGameCard">
+                <p id="sct5-game-title">Garry's Mod</p>
+                <img src="https://static-cdn.jtvnw.net/ttv-boxart/18846_IGDB-272x380.jpg" alt="" class="sct5-game-image">
+                <p id="sct5-game-genres">Sandbox</p>
+                <p id="sct5-game-release-date">Release date: 2006</p>
+            </div>
+            <div class="sct5-game-card sct5-ShooterGameCard">
+                <p id="sct5-game-title">Battlefield 1</p>
+                <img src="https://upload.wikimedia.org/wikipedia/en/f/fc/Battlefield_1_cover_art.jpg" alt="" class="sct5-game-image">
+                <p id="sct5-game-genres">Shooter</p>
+                <p id="sct5-game-release-date">Release date: 2016</p>
+            </div>
+            <div class="sct5-game-card sct5-BattleRoyaleCard">
+                <p id="sct5-game-title">Fortnite</p>
+                <img src="https://compass-ssl.xboxlive.com/assets/8e/a0/8ea06cab-7317-4a26-bd89-93b8ac0b46a8.png?n=MSXC-games-and-apps-Fortnite-150x225-01.png" alt="" class="sct5-game-image">
+                <p id="sct5-game-genres">Battle-Royale</p>
+                <p id="sct5-game-release-date">Release date: 2017</p>
+            </div>
+            <div class="sct5-game-card sct5-BattleRoyaleCard">
+                <p id="sct5-game-title">PUBG</p>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyjLTaKmi4LmHgos-l_Ri29h2HEV80craHRQ&s" alt="" class="sct5-game-image">
+                <p id="sct5-game-genres">Battle-Royale</p>
+                <p id="sct5-game-release-date">Release date: 2011</p>
+            </div>
+            <div class="sct5-game-card sct5-ShooterGameCard">
+                <p id="sct5-game-title">Warface</p>
+                <img src="https://image.api.playstation.com/vulcan/ap/rnd/202409/1712/d743144594a591fc57db587246f21a6e2d5e8d10008a134e.png" alt="" class="sct5-game-image">
+                <p id="sct5-game-genres">Shooter</p>
+                <p id="sct5-game-release-date">Release date: 2013</p>
+            </div>
+            <div class="sct5-game-card sct5-BattleRoyaleCard">
+                <p id="sct5-game-title">Apex Legends</p>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR42kgeZm7lCykdYGc5o3djXvt9y0JgdeLGHQ&s" alt="" class="sct5-game-image">
+                <p id="sct5-game-genres">Battle-Royale</p>
+                <p id="sct5-game-release-date">Release date: 2019</p>
+            </div>
+            <div class="sct5-game-card sct5-SandboxGameCard">
+                <p id="sct5-game-title">Terraria</p>
+                <img src="https://upload.wikimedia.org/wikipedia/en/1/1a/Terraria_Steam_artwork.jpg" alt="" class="sct5-game-image">
+                <p id="sct5-game-genres">Sandbox</p>
+                <p id="sct5-game-release-date">Release date: 2011</p>
+            </div>
+            <div class="sct5-game-card sct5-ShooterGameCard">
+                <p id="sct5-game-title">DOOM Eternal</p>
+                <img src="https://image.api.playstation.com/vulcan/ap/rnd/202010/0114/b4Q1XWYaTdJLUvRuALuqr0wP.png" alt="" class="sct5-game-image">
+                <p id="sct5-game-genres">Shooter</p>
+                <p id="sct5-game-release-date">Release date: 2020</p>
+            </div>
+            <div class="sct5-game-card sct5-MOBAGameCard">
+                <p id="sct5-game-title">LoL</p>
+                <img src="https://howlongtobeat.com/games/5203_League_of_Legends.jpg" alt="" class="sct5-game-image">
+                <p id="sct5-game-genres">MOBA</p>
+                <p id="sct5-game-release-date">Release date: 2009</p>
+            </div>
+            <div class="sct5-game-card sct5-SandboxGameCard">
+                <p id="sct5-game-title">Don't Starve</p>
+                <img src="https://upload.wikimedia.org/wikipedia/en/d/d2/Don%27t_Starve_cover.jpg" alt="" class="sct5-game-image">
+                <p id="sct5-game-genres">Sandbox</p>
+                <p id="sct5-game-release-date">Release date: 2013</p>
+            </div>
+            <div class="sct5-game-card sct5-ShooterGameCard">
+                <p id="sct5-game-title">Half Life 2</p>
+                <img src="https://upload.wikimedia.org/wikipedia/en/2/25/Half-Life_2_cover.jpg" alt="" class="sct5-game-image">
+                <p id="sct5-game-genres"> Shooter</p>
+                <p id="sct5-game-release-date">Release date: 2004</p>
+            </div>
+            <div class="sct5-game-card sct5-MOBAGameCard">
+                <p id="sct5-game-title">DOTA 2</p>
+                <img src="https://howlongtobeat.com/games/250px-DotA2.jpg" alt="" class="sct5-game-image">
+                <p id="sct5-game-genres">MOBA</p>
+                <p id="sct5-game-release-date">Release date: 2013</p>
+            </div>
+             </div>
+    </div>
+ <!--section 6 : Blackjack -->
+    <div class="sct sct6" id="sct6">
+        <h1 style="text-align: center; color: rgb(203, 212, 219);">Blackjack</h1>
+        <button id="sct6-Close" class="selectAppBtn">Close Filter Games Project</button>
     </div>
     <script src="yoHub.js"></script>
 </body>
